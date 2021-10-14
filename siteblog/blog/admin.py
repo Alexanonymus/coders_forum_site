@@ -17,7 +17,7 @@ class PostAdmin(admin.ModelAdmin):
 
     form = PostAdminForm
     save_as = True
-    list_display = ('id', 'title', 'slug', 'content', 'category', 'created_at', 'get_photo', 'views')
+    list_display = ('id', 'title', 'slug', 'category', 'created_at', 'get_photo', 'views')
     list_display_links =('id', 'title', 'slug',)
     search_fields = ('id', 'title')
     list_filter = ('category', )

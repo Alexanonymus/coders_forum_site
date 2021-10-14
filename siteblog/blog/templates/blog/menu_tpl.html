@@ -1,0 +1,23 @@
+<div class="{{ menu_class  }}">
+                            <ul>
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="#">IT yangiliklar</a></li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Category</button>
+                                    <div class="dropbt_hover">
+                                        <div class="dropdown-content">
+                                        {% for item in categories %}
+
+                                            <a href="{{ item.get_absolute_url }}">{{item.title}}</a>
+
+                                        {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Sign in</a></li>
+                                <li><a href="#">Sign up</a></li>
+                            </ul>
+                        </div>
