@@ -708,7 +708,7 @@ section.blog-post-area h4 span.author-name {
     top: 85px;
     width: 100%;
 }
-.single-blog-area h2.sidebar-title {
+.single-blog-area h2.sidebar-title2 {
     background: #efefef none repeat scroll 0 0;
     color: #000;
     font-family: Geometria;
@@ -719,6 +719,21 @@ section.blog-post-area h4 span.author-name {
     padding: 21px 25px;
     text-transform: uppercase;
 }
+
+.single-blog-area h2.sidebar-title_popular{
+    background: #efefef none repeat scroll 0 0;
+    color: #000;
+    font-family: Geometria;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 21px 25px;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+
 .single-blog-area .tags p {
     background: #40c4ff none repeat scroll 0 0;
     border-radius: 5px;

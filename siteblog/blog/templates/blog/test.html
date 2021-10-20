@@ -4,14 +4,15 @@
 {% block title %}{{ post.title }}::{{block.super}}{% endblock %}
 {% block content %}
 
-        <section class="single-blog-area">
-            <div class="container">
-                <div class="row">
-                   <div class="col-md-12">
-                    <div class="border-top">
-                        <div class="col-md-8">
+
+<section class="single-blog-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="border-top">
+                    <div class="col-md-8">
                         <div class="blog-area">
-                              <div class="blog-area-part">
+                            <div class="blog-area-part">
                                 <h2>{{ post.title }}</h2>
 
                                 <div class="single-content">
@@ -35,7 +36,6 @@
                                 </div>
                             </div>
 
-
                             <div class="commententries">
                                 <h3>Comments</h3>
 
@@ -51,10 +51,14 @@
                                                     <p>February 25 2017</p>
                                                 </div>
                                                 <div class="comment-body">
-                                                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                                                    <p>is simply dummy text of the printing and typesetting industry.
+                                                        Lorem Ipsum has been the industry's standard </p>
                                                 </div>
                                                 <div class="reply">
-                                                    <p><span><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>12</span><span><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>7</span></p>
+                                                    <p><span><a href="#"><i class="fa fa-thumbs-up"
+                                                                            aria-hidden="true"></i></a>12</span><span><a
+                                                            href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>7</span>
+                                                    </p>
                                                 </div>
                                             </section>
                                         </article>
@@ -71,10 +75,15 @@
                                                             <p>February 25 2017</p>
                                                         </div>
                                                         <div class="comment-body">
-                                                            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                                                            <p>is simply dummy text of the printing and typesetting
+                                                                industry. Lorem Ipsum has been the industry's
+                                                                standard </p>
                                                         </div>
                                                         <div class="reply">
-                                                            <p><span><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>12</span><span><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>7</span></p>
+                                                            <p><span><a href="#"><i class="fa fa-thumbs-up"
+                                                                                    aria-hidden="true"></i></a>12</span><span><a
+                                                                    href="#"><i class="fa fa-reply"
+                                                                                aria-hidden="true"></i></a>7</span></p>
                                                         </div>
                                                     </section>
                                                 </article>
@@ -93,10 +102,14 @@
                                                     <p>February 25 2017</p>
                                                 </div>
                                                 <div class="comment-body">
-                                                    <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                                                    <p>is simply dummy text of the printing and typesetting industry.
+                                                        Lorem Ipsum has been the industry's standard </p>
                                                 </div>
                                                 <div class="reply">
-                                                    <p><span><a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>12</span><span><a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>7</span></p>
+                                                    <p><span><a href="#"><i class="fa fa-thumbs-up"
+                                                                            aria-hidden="true"></i></a>12</span><span><a
+                                                            href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>7</span>
+                                                    </p>
                                                 </div>
                                             </section>
                                         </article>
@@ -104,7 +117,7 @@
                                 </ul>
 
                             </div>
-                            <form action="#" method="get">
+                             <form action="#" method="get">
                                 <div class="name">
                                     <input type="text" name="" id="" placeholder="Name" class="name">
                                 </div>
@@ -120,47 +133,52 @@
                             </form>
                         </div>
                     </div>
-                        <div class="col-md-4">
-                               {% get_popular 4 %}
-                            <div class="tags">
-                                <h2 class="sidebar-title2">Tags</h2>
-                                <p><a href="#">Adventure</a></p>
-                                <p><a href="#">Animals</a></p>
-                                <p><a href="#">Asia</a></p>
-                                <p><a href="#">Beauty</a></p>
-                                <p><a href="#">Canada</a></p>
-                                <p><a href="#">Celebration</a></p>
-                                <p><a href="#">City</a></p>
-                                <p><a href="#">Coffee</a></p>
-                                <p><a href="#">Constructions</a></p>
-                                <p><a href="#">Europe</a></p>
-                                <p><a href="#">Adventure</a></p>
-                                <p><a href="#">Animals</a></p>
-                                <p><a href="#">Asia</a></p>
-                                <p><a href="#">Beauty</a></p>
-                                <p><a href="#">Canada</a></p>
-                                <p><a href="#">Celebration</a></p>
-                                <p><a href="#">City</a></p>
-                                <p><a href="#">Coffee</a></p>
-                                <p><a href="#">Constructions</a></p>
-                                <p><a href="#">Europe</a></p>
-                                <p><a href="#">Adventure</a></p>
-                                <p><a href="#">Animals</a></p>
-                                <p><a href="#">Asia</a></p>
-                                <p><a href="#">Beauty</a></p>
-                                <p><a href="#">Canada</a></p>
-                            </div>
-                            <div class="newsletter">
-                                <h2 class="sidebar-title2">Subscribe To oUR nEWSLETTER</h2>
-                                <form action="#" method="post">
-                                    <input type="email" name="" id="" placeholder="Email">
-                                    <input type="submit" value="Subscribe">
-                                </form>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+
+                        {% get_popular 4 %}
+
                     </div>
+
+                    <div class="tags">
+                        <h2 class="sidebar-title">Tags</h2>
+                        <p><a href="#">Adventure</a></p>
+                        <p><a href="#">Animals</a></p>
+                        <p><a href="#">Asia</a></p>
+                        <p><a href="#">Beauty</a></p>
+                        <p><a href="#">Canada</a></p>
+                        <p><a href="#">Celebration</a></p>
+                        <p><a href="#">City</a></p>
+                        <p><a href="#">Coffee</a></p>
+                        <p><a href="#">Constructions</a></p>
+                        <p><a href="#">Europe</a></p>
+                        <p><a href="#">Adventure</a></p>
+                        <p><a href="#">Animals</a></p>
+                        <p><a href="#">Asia</a></p>
+                        <p><a href="#">Beauty</a></p>
+                        <p><a href="#">Canada</a></p>
+                        <p><a href="#">Celebration</a></p>
+                        <p><a href="#">City</a></p>
+                        <p><a href="#">Coffee</a></p>
+                        <p><a href="#">Constructions</a></p>
+                        <p><a href="#">Europe</a></p>
+                        <p><a href="#">Adventure</a></p>
+                        <p><a href="#">Animals</a></p>
+                        <p><a href="#">Asia</a></p>
+                        <p><a href="#">Beauty</a></p>
+                        <p><a href="#">Canada</a></p>
                     </div>
+                   <div class="newsletter">
+                            <h2 class="sidebar-title">Subscribe To oUR nEWSLETTER</h2>
+                            <form action="#" method="post">
+                                <input type="email" name="" id="" placeholder="Email">
+                                <input type="submit" value="Subscribe">
+                            </form>
+                   </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+    </div>
+</section>
+
 {% endblock %}
